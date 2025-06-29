@@ -37,3 +37,10 @@ Beberapa temuan utama dari analisis ini:
 - Produk paling menguntungkan berasal dari kategori _Psycholeptics_
 - Ditemukan mismatch antara rating cabang dan rating transaksi pada beberapa kota — menunjukkan potensi untuk audit layanan
 - Tahun 2022 memiliki total transaksi lebih tinggi diantara yang lain
+
+
+## Kontributor
+Nama :  Rizka Hasna Nabila
+Email : rizkahasna94@gmail.com
+Github : @rizkaa-hn
+Linkedin : https://www.linkedin.com/in/rizkahasnanabila/ 
