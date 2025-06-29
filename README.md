@@ -40,7 +40,7 @@ Beberapa temuan utama dari analisis ini:
 
 
 ## Kontributor
-Nama :  Rizka Hasna Nabila
-Email : rizkahasna94@gmail.com
-Github : @rizkaa-hn
-Linkedin : https://www.linkedin.com/in/rizkahasnanabila/ 
+- Nama :  Rizka Hasna Nabila
+- Email : rizkahasna94@gmail.com
+- Github : @rizkaa-hn
+- Linkedin : https://www.linkedin.com/in/rizkahasnanabila/ 
