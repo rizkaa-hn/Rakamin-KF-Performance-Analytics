@@ -1,0 +1,47 @@
+CREATE OR REPLACE TABLE `rakamin-kf-analytics-464007.kimia_farma.tabel_analisis` AS
+SELECT
+  tr.transaction_id,
+  tr.date,
+  tr.branch_id,
+  cab.branch_name,
+  cab.kota,
+  cab.provinsi,
+  cab.rating AS rating_cabang,
+  tr.customer_name,
+  tr.product_id,
+  pr.product_name,
+  tr.price AS actual_price,
+  tr.discount_percentage,
+  
+  -- Hitung persentase gross laba
+  CASE
+    WHEN tr.price <= 50000 THEN 0.10
+    WHEN tr.price > 50000 AND tr.price <= 100000 THEN 0.15
+    WHEN tr.price > 100000 AND tr.price <= 300000 THEN 0.20
+    WHEN tr.price > 300000 AND tr.price <= 500000 THEN 0.25
+    WHEN tr.price > 500000 THEN 0.30
+  END AS persentase_gross_laba,
+
+  -- Hitung nett_sales: harga setelah diskon
+  tr.price * (1 - tr.discount_percentage / 100) AS nett_sales,
+
+  -- Hitung nett_profit
+  tr.price * (1 - tr.discount_percentage / 100) *
+  CASE
+    WHEN tr.price <= 50000 THEN 0.10
+    WHEN tr.price > 50000 AND tr.price <= 100000 THEN 0.15
+    WHEN tr.price > 100000 AND tr.price <= 300000 THEN 0.20
+    WHEN tr.price > 300000 AND tr.price <= 500000 THEN 0.25
+    WHEN tr.price > 500000 THEN 0.30
+  END AS nett_profit,
+
+  tr.rating AS rating_transaksi
+
+FROM
+  `rakamin-kf-analytics-464007.kimia_farma.kf_final_transaction` tr
+LEFT JOIN
+  `rakamin-kf-analytics-464007.kimia_farma.kf_product` pr
+  ON tr.product_id = pr.product_id
+LEFT JOIN
+  `rakamin-kf-analytics-464007.kimia_farma.kf_kantor_cabang` cab
+  ON tr.branch_id = cab.branch_id;
