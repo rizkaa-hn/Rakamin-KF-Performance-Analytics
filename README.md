@@ -1,4 +1,4 @@
-# Kimia Farma - Big Data Analyst Final Task
+# Kimia Farma - Performance Analytics 2020 - 2023
 
 ## About the Project
 Projek ini merupakan bagian dari Final Task – Big Data Analyst Challenge oleh Rakamin Academy dan Kimia Farma. Tujuannya adalah membangun dashboard analitik komprehensif untuk menganalisis performa transaksi dan profit cabang Kimia Farma di seluruh Indonesia pada periode 2020–2023.
