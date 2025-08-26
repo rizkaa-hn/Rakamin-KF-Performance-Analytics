@@ -33,10 +33,11 @@ Aplikasi yang digunakan dalam mengerjakan project ini:
 
 ## Hasil Analisis
 Beberapa temuan utama dari analisis ini:
-- Jawa Barat mendominasi total transaksi dan nett sales nasional
+- Melihat Jawa Barat merupakan penyumbang pendapatan terbesar, Kimia Farma perlu mencermati kinerja cabang-cabang di provinsi lain. Strategi pemasaran yang efektif di Jawa Barat dapat diadaptasi dan diterapkan di wilayah lain untuk membantu meningkatkan pendapatan secara lebih merata di seluruh negeri.
 - Produk paling menguntungkan berasal dari kategori _Psycholeptics_
 - Ditemukan mismatch antara rating cabang dan rating transaksi pada beberapa kota — menunjukkan potensi untuk audit layanan
-- Tahun 2022 memiliki total transaksi lebih tinggi diantara yang lain
+- Cabang-cabang yang berkinerja buruk — baik dari segi transaksi maupun laba — membutuhkan perhatian ekstra. Perusahaan dapat memberikan pelatihan staf dan meningkatkan sistem layanan untuk meningkatkan kinerja cabang-cabang tersebut.
+- Penurunan pendapatan pada tahun 2021 dan 2023 perlu dicermati lebih lanjut. Penting bagi perusahaan untuk mengetahui faktor internal atau eksternal apa yang mungkin menyebabkan penurunan ini.
 
 
 ## Kontributor
